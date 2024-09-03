@@ -17,7 +17,7 @@ locals {
   tags = {
     Name       = local.name
     Example    = local.name
-    Repository = "https://github.com/terraform-aws-modules/terraform-aws-rds"
+    Repository = "https://github.com/quarks-labs/aws-rds-module"
   }
 
   engine                = "postgres"
@@ -143,8 +143,7 @@ module "replica" {
 ################################################################################
 
 module "vpc_region1" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "~> 5.0"
+  source  = "git::git@github.com:quarks-labs/aws-vpc-module.git"
 
   name = local.name
   cidr = "10.100.0.0/18"
@@ -160,8 +159,8 @@ module "vpc_region1" {
 }
 
 module "security_group_region1" {
-  source  = "terraform-aws-modules/security-group/aws"
-  version = "~> 5.0"
+  source  = "git::git@github.com:quarks-labs/aws-security-group-module.git"
+  
 
   name        = local.name
   description = "Replica PostgreSQL example security group"
@@ -182,8 +181,7 @@ module "security_group_region1" {
 }
 
 module "vpc_region2" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "~> 5.0"
+  source  = "git::git@github.com:quarks-labs/aws-vpc-module.git"
 
   providers = {
     aws = aws.region2
@@ -203,8 +201,8 @@ module "vpc_region2" {
 }
 
 module "security_group_region2" {
-  source  = "terraform-aws-modules/security-group/aws"
-  version = "~> 5.0"
+  source  = "git::git@github.com:quarks-labs/aws-security-group-module.git"
+  
 
   providers = {
     aws = aws.region2

@@ -14,7 +14,6 @@ locals {
   tags = {
     Name       = local.name
     Example    = local.name
-    Repository = "https://github.com/terraform-aws-modules/terraform-aws-rds"
   }
 }
 
@@ -126,8 +125,7 @@ module "mysql" {
 ################################################################################
 
 module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "~> 5.0"
+  source  = "git::git@github.com:quarks-labs/aws-vpc-module.git"
 
   name = local.name
   cidr = local.vpc_cidr
@@ -143,8 +141,8 @@ module "vpc" {
 }
 
 module "postgres_security_group" {
-  source  = "terraform-aws-modules/security-group/aws"
-  version = "~> 5.0"
+  source  = "git::git@github.com:quarks-labs/aws-security-group-module.git"
+  
 
   name        = "${local.name}-postgresql"
   description = "Blue/Green deployment PostgreSQL example security group"
@@ -166,8 +164,8 @@ module "postgres_security_group" {
 
 
 module "mysql_security_group" {
-  source  = "terraform-aws-modules/security-group/aws"
-  version = "~> 5.0"
+  source  = "git::git@github.com:quarks-labs/aws-security-group-module.git"
+  
 
   name        = "${local.name}-mysql"
   description = "Blue/Green deployment MySQL example security group"

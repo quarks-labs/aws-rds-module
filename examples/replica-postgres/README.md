@@ -34,8 +34,8 @@ Note that this example may create resources which cost money. Run `terraform des
 |------|--------|---------|
 | <a name="module_master"></a> [master](#module\_master) | ../../ | n/a |
 | <a name="module_replica"></a> [replica](#module\_replica) | ../../ | n/a |
-| <a name="module_security_group"></a> [security\_group](#module\_security\_group) | terraform-aws-modules/security-group/aws | ~> 5.0 |
-| <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | ~> 5.0 |
+| <a name="module_security_group"></a> [security\_group](#module\_security\_group) | git::git@github.com:quarks-labs/aws-security-group-module.git | ~> 5.0 |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | git::git@github.com:quarks-labs/aws-vpc-module.git | ~> 5.0 |
 
 ## Resources
 

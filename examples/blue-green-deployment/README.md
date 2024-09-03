@@ -40,10 +40,10 @@ Note that this example may create resources which cost money. Run `terraform des
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_mysql"></a> [mysql](#module\_mysql) | ../../ | n/a |
-| <a name="module_mysql_security_group"></a> [mysql\_security\_group](#module\_mysql\_security\_group) | terraform-aws-modules/security-group/aws | ~> 5.0 |
+| <a name="module_mysql_security_group"></a> [mysql\_security\_group](#module\_mysql\_security\_group) | git::git@github.com:quarks-labs/aws-security-group-module.git | ~> 5.0 |
 | <a name="module_postgres"></a> [postgres](#module\_postgres) | ../../ | n/a |
-| <a name="module_postgres_security_group"></a> [postgres\_security\_group](#module\_postgres\_security\_group) | terraform-aws-modules/security-group/aws | ~> 5.0 |
-| <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | ~> 5.0 |
+| <a name="module_postgres_security_group"></a> [postgres\_security\_group](#module\_postgres\_security\_group) | git::git@github.com:quarks-labs/aws-security-group-module.git | ~> 5.0 |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | git::git@github.com:quarks-labs/aws-vpc-module.git | ~> 5.0 |
 
 ## Resources
 

@@ -35,10 +35,10 @@ Note that this example may create resources which cost money. Run `terraform des
 | <a name="module_kms"></a> [kms](#module\_kms) | terraform-aws-modules/kms/aws | ~> 1.0 |
 | <a name="module_master"></a> [master](#module\_master) | ../../ | n/a |
 | <a name="module_replica"></a> [replica](#module\_replica) | ../../ | n/a |
-| <a name="module_security_group_region1"></a> [security\_group\_region1](#module\_security\_group\_region1) | terraform-aws-modules/security-group/aws | ~> 5.0 |
-| <a name="module_security_group_region2"></a> [security\_group\_region2](#module\_security\_group\_region2) | terraform-aws-modules/security-group/aws | ~> 5.0 |
-| <a name="module_vpc_region1"></a> [vpc\_region1](#module\_vpc\_region1) | terraform-aws-modules/vpc/aws | ~> 5.0 |
-| <a name="module_vpc_region2"></a> [vpc\_region2](#module\_vpc\_region2) | terraform-aws-modules/vpc/aws | ~> 5.0 |
+| <a name="module_security_group_region1"></a> [security\_group\_region1](#module\_security\_group\_region1) | git::git@github.com:quarks-labs/aws-security-group-module.git | ~> 5.0 |
+| <a name="module_security_group_region2"></a> [security\_group\_region2](#module\_security\_group\_region2) | git::git@github.com:quarks-labs/aws-security-group-module.git | ~> 5.0 |
+| <a name="module_vpc_region1"></a> [vpc\_region1](#module\_vpc\_region1) | git::git@github.com:quarks-labs/aws-vpc-module.git | ~> 5.0 |
+| <a name="module_vpc_region2"></a> [vpc\_region2](#module\_vpc\_region2) | git::git@github.com:quarks-labs/aws-vpc-module.git | ~> 5.0 |
 
 ## Resources
 

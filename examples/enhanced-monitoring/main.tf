@@ -14,7 +14,7 @@ locals {
   tags = {
     Name       = local.name
     Example    = local.name
-    Repository = "https://github.com/terraform-aws-modules/terraform-aws-rds"
+    Repository = "https://github.com/quarks-labs/aws-rds-module"
   }
 }
 
@@ -98,8 +98,7 @@ data "aws_iam_policy_document" "rds_enhanced_monitoring" {
 ################################################################################
 
 module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "~> 5.0"
+  source  = "git::git@github.com:quarks-labs/aws-vpc-module.git"
 
   name = local.name
   cidr = local.vpc_cidr
@@ -115,8 +114,8 @@ module "vpc" {
 }
 
 module "security_group" {
-  source  = "terraform-aws-modules/security-group/aws"
-  version = "~> 5.0"
+  source  = "git::git@github.com:quarks-labs/aws-security-group-module.git"
+  
 
   name        = local.name
   description = "Enhanced monitoring MySQL example security group"

@@ -26,8 +26,8 @@ Further database configurations for creating extension and invoking from postgre
 | <a name="module_lambda"></a> [lambda](#module\_lambda) | terraform-aws-modules/lambda/aws | ~> 6.0 |
 | <a name="module_rds_invoke_lambda_policy"></a> [rds\_invoke\_lambda\_policy](#module\_rds\_invoke\_lambda\_policy) | terraform-aws-modules/iam/aws//modules/iam-policy | ~> 5.28.0 |
 | <a name="module_rds_invoke_lambda_role"></a> [rds\_invoke\_lambda\_role](#module\_rds\_invoke\_lambda\_role) | terraform-aws-modules/iam/aws//modules/iam-assumable-role | ~> 5.28.0 |
-| <a name="module_security_group"></a> [security\_group](#module\_security\_group) | terraform-aws-modules/security-group/aws | ~> 4.0 |
-| <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | ~> 5.0 |
+| <a name="module_security_group"></a> [security\_group](#module\_security\_group) | git::git@github.com:quarks-labs/aws-security-group-module.git | ~> 4.0 |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | git::git@github.com:quarks-labs/aws-vpc-module.git | ~> 5.0 |
 
 ## Resources
 
