@@ -88,7 +88,7 @@ The following values are provided to toggle on/off creation of the associated re
 
 ```hcl
 module "db" {
-  source = "terraform-aws-modules/rds/aws"
+  source = "git::git@github.com:quarks-labs/aws-rds-module.git"
 
   # Disable creation of RDS instance(s)
   create_db_instance = false
