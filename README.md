@@ -8,7 +8,7 @@ Terraform module which creates RDS resources on AWS.
 
 ```hcl
 module "db" {
-  source = ""
+  source = "git::git@github.com:quarks-labs/aws-rds-module.git"
 
   identifier = "demodb"
 
